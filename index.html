@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    	<meta charset="UTF-8">
+    	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="mechanics.js"></script>
+        <link href="styles.css" rel="stylesheet" type="text/css">
+		<title>DISDEP</title>
+    </head>
+
+    <body>
+        <div class='header'>
+           <nav>
+                <img src='images/logo-transparente.png' class='bloque-der' height="25%" width="25%"/>
+               <p class= 'bloque-izq' id='titulo'>Disaster Detection, Prevention and Monitoring</p>
+            </nav>
+        </div>
+        <div class='info'>
+            <nav class='alerts' id="border-land">
+                <p class="alerts-title">Alerts:</p>
+                <hr>
+                <p>Coordinates: -31.399084,-64.334431,11</p>
+                <div>
+                    <hr>
+                    <div class="div-items"><span ><img class="div-items" src ="images/incendios.png" height="35px" width="35px" alt="Fires"/></span> <span class="right-al"><p class="red-alert">Fires: 80%</p></span></div>
+                    <div class="div-items"><span ><img class="div-items" src="images/sismos.png" height="35px" width="35px" alt="Fires"/></span><span class="right-al"><p class="yellow-alert">Earthquakes: 35%</p></span></div>
+                    <div class="div-items"><span ><img class="div-items" src="images/inundaciones.png" height="35px" width="35px" alt="Fires"/></span><span class="right-al"><p class="yellow-alert">Floods: 2%</p></span></div>
+                    <div class="div-items"><span ><img class="div-items" src="images/tifon.png" height="35px" width="35px" alt="Fires"/></span><span  class="right-al"><p class="green-alert">Typhoons:0%</p></span></div>
+                    <div class="div-items"><span ><img class="div-items" src="images/huracan.png" height="35px" width="35px" alt="Fires"/></span><span class="right-al"><p class="green-alert">Tornadoes: 0%</p></span></div>
+                    <hr>
+                    <div class="div-items"><span ><img src="images/deslaves.png" height="35px" width="35px" alt="Fires"/></span><span class="right-al"><p class="green-alert" id="landslides">Landslides: 5%</p></span></div>
+                </div>
+            </nav>
+            <nav class='maps'>
+                <div>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d217954.93389075092!2d-64.3344309779378!3d-31.399083972440742!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9432985f478f5b69%3A0xb0a24f9a5366b092!2sC%C3%B3rdoba%2C%20Cordoba!5e0!3m2!1sen!2sar!4v1633210433779!5m2!1sen!2sar" width="600" height="350" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+                <div>
+                    <button id="userAlert" class="button" class="button1">Generate a landslide alert</button>
+                </div>
+            </nav>
+        </div>
+        <div class='contenido'>
+           <p class="alerts-title">How does DISEP work?</p>
+            <p>DISEP is a system developed to detect the areas with the highest risk of landslides. To do this, use indicators:</p>
+                <p>     - Fire Hazard</p>
+                <p>     - Risk of Floods</p>
+                <p>     - Risk of Typhoons and Hurricanes</p>
+                <p>     - Deforestation</p>
+                <p>     - Mountain Transformations</p>
+                <p>     - Elevation of the ground</p>
+                <p>     - Risk of flooding</p>
+            <p>These data are obtained from various sensors, historical data and satellites, such as SAOCOM and MODIS.
+                Some results of interest are presented with their probability of occurrence. They are shown in 3 colors:</p>
+                <p class="red-alert">     * Red: High risk</p>
+                <p class="yellow-alert">     * Yellow: Medium risk</p>
+                <p class="green-alert">     * Green: No risk.</p>
+            <p>If a disaster was happening and was not detected, you can back it up. These data are analyzed and displayed on the map.</p>
+        </div>
+        <div class="footer">
+            <p>Space Apps Challenge 2021 | Cloudhack 4.0 | Contacto: @cloudhack</p>
+        </div>
+
+    </body>
+</html>
