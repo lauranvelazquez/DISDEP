@@ -23,6 +23,6 @@ If a disaster was happening and was not detected, you can back it up. These data
 
 # Technology
 
-• Javascript, HTML, CSS
-• Google maps
-• Satelital Data
+	• Javascript, HTML, CSS
+	• Google maps
+	• Satelital Data
